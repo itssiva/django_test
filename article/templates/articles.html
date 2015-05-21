@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block section %}
+
+{% for article in articles %}
+<a href="/articles/get/{{article.id}}/"><h1> {{article.title}}</h1></a>
+<p> {{article.body|upper}}</p>
+{% endfor %}
+{% endblock %}
