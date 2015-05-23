@@ -4,16 +4,21 @@
  	<link rel="stylesheet" type="text/css" href="{% static "assets/css/article.css" %}">
  </head>
  <body>
+ 	The language is set to : {{language}}
+ 	<br>
+ 	Seesion Language is set to : {{session_language}}
 <div id="nav">
 <a href="/articles/all/"> Articles</a><br>
 <a href="/admin/"> Admin</a><br>
+<a href="/articles/create/"> Create Article</a><br>
+
 </div>
 {% block section %}
 <div id="section">
 
 </div>
 {% endblock%}
-<img src="{% static "assets/images/logo.jpg" %}" 
+<img src="{% static "assets/images/logo.jpg" %} " width = "300"> 
 
 </body>
 </html> 

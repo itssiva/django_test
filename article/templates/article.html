@@ -4,4 +4,7 @@
 
 <h1> {{article.title}}</h1>
 <p> {{article.body | upper}}</p>
+<p> {{article.likes }} people liked this article
+<p><a href="/articles/like/{{article.id}}"> Like </a></p>
+
 {% endblock %}

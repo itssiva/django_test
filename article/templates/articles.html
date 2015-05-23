@@ -5,5 +5,10 @@
 {% for article in articles %}
 <a href="/articles/get/{{article.id}}/"><h1> {{article.title}}</h1></a>
 <p> {{article.body|upper}}</p>
+<p> {{article.likes}} people liked this. </p>
 {% endfor %}
 {% endblock %}
+
+{%block image%}
+
+{%endblock%}

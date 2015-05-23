@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block section %}
+<form action = "/articles/create/" method = "post" > {% csrf_token %}
+<ul>
+{{ form.as_ul}}
+</ul>
+<input type="submit" name="Submit" value = "Create Article">
+</form>
+<a href = "/articles/all/"> Cancel </a>
+
+
+{% endblock %}
+<br><hr>
