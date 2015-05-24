@@ -6,5 +6,5 @@
 <p> {{article.body | upper}}</p>
 <p> {{article.likes }} people liked this article
 <p><a href="/articles/like/{{article.id}}"> Like </a></p>
-
+<p><img src = "/static/{{ article.thumbnail}}" width = "200"/></p>
 {% endblock %}

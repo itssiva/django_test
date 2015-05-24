@@ -33,7 +33,7 @@ def language(request, language='en-us'):
 	return response
 
 def create(request):
-	form = ArticleForm(request.POST)
+	form = ArticleForm(request.POST, request.FILES)
 	if form.is_valid():
 		form.save()
 		return HttpResponseRedirect('/articles/all')
